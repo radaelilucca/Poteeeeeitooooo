@@ -1,6 +1,6 @@
 ## It's just a funny page I created to put a smile on my Girlfriend's cute face! 
 
-### Try to send some money (don't worrie it's fake) to Umaru buy Poteitos. 🥨
+### Try to send some money (don't worry it's fake) to Umaru buy Poteitos. 🥨
 
 https://potatoumaru.herokuapp.com/
 
