@@ -30,8 +30,6 @@ Modal.setAppElement("#root");
 export default function Umaru() {
   const [money, setMoney] = useState();
   const [modalIsOpen, setIsOpen] = React.useState(false);
-  let subtitle;
-
   useEffect(() => {
     console.log(money);
   }, [money]);
@@ -46,17 +44,22 @@ export default function Umaru() {
     setTimeout(() => {
       setIsOpen(true);
     }, 900);
+
     setTimeout(() => {
       setIsOpen(false);
     }, 30000);
   }
+
   function afterOpenModal() {
-    // references are now sync'd and can be accessed.
+
     console.log("OPENED");
   }
+
   function closeModal() {
     setIsOpen(false);
   }
+
+
   return (
     <Container>
       <Modal
@@ -68,10 +71,14 @@ export default function Umaru() {
       >
         <Image src={wpp} alt="aaa" />
       </Modal>
+
       <SectionForm>
+
         <img src={umarulogo} alt="Be The Hero" />
+
         <Form>
           <h1>Gimme Money! I need more Poteito Chipsu</h1>
+         
           <input
             placeholder="AMOUNT"
             value={money}
@@ -81,7 +88,10 @@ export default function Umaru() {
           <Button type="submit" onClick={handleSubmit}>
             SEND MONEY
           </Button>
+
           <a href="/register">
+
+            
             <FiLogIn size={16} color="#f00d7d" />I dont have money
           </a>
         </Form>
